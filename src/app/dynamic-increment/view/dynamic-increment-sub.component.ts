@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { ExampleController } from 'features/example/example.controller';
 
 @Component({
-  selector: 'dynamic-interval-sub-component',
-  templateUrl: './dynamic-interval-sub.component.html',
+  selector: 'dynamic-increment-sub-component',
+  templateUrl: './dynamic-increment-sub.component.html',
 })
-export class DynamicIntervalSubComponent {
+export class DynamicIncrementSubComponent {
   constructor(
     public exampleController: ExampleController,
   ) {}

@@ -23,8 +23,8 @@ import { AppFramer } from '@framing/ng-tasknas-framers';
           routerLink: 'custom-submit-handler',
         },
         {
-          title: 'Dynamic Interval',
-          routerLink: 'dynamic-interval',
+          title: 'Dynamic Increment',
+          routerLink: 'dynamic-increment',
         },
       ],
     }),
@@ -34,7 +34,7 @@ import { AppFramer } from '@framing/ng-tasknas-framers';
     { path: 'custom-example-sub-component', loadChildren: './custom-example-sub-component/custom-example-sub-component.module#CustomExampleSubComponentModule' },
     { path: 'custom-submit-handler', loadChildren: './custom-submit-handler/custom-submit-handler.module#CustomSubmitHandlerModule' },
     { path: 'default', loadChildren: './default/default.module#DefaultModule' },
-    { path: 'dynamic-interval', loadChildren: './dynamic-interval/dynamic-interval.module#DynamicIntervalModule' },
+    { path: 'dynamic-increment', loadChildren: './dynamic-increment/dynamic-increment.module#DynamicIncrementModule' },
   ])
 ))
 export class AppModule {}

@@ -16,14 +16,14 @@ export class ExampleFeature extends Framer<ExampleModel, ExampleView, ExampleCon
   public get defaultModel(): ExampleModel {
     return {
       count: 0,
-      interval: 1,
+      increment: 1,
     };
   }
 
   public get defaultView(): ExampleView {
     return {
-      exampleSubComponent: ExampleSubComponent,
       exampleComponent: ExampleComponent,
+      exampleSubComponent: ExampleSubComponent,
     };
   }
 

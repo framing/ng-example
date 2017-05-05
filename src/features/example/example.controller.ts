@@ -7,6 +7,6 @@ import { ExampleView } from './example.view';
 @Injectable()
 export class ExampleController extends Controller<ExampleModel, ExampleView> {
   public submit(): void {
-    this.model.count += this.model.interval;
+    this.model.count += this.model.increment;
   }
 }
