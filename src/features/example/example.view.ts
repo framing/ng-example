@@ -1,7 +1,7 @@
 import { Type } from '@angular/core';
 
 export interface ExampleView {
-  exampleComponent: Type<any>;
+  exampleComponent?: Type<any>;
 
-  exampleSubComponent: Type<any>;
+  exampleSubComponent?: Type<any>;
 }

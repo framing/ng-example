@@ -3,15 +3,11 @@ import { Framing } from '@framing/ng-core';
 
 import { ExampleFeature } from 'features/example/example.feature';
 
-import { CustomExampleComponentViewModule } from './view/custom-example-component-view.module';
-import { CustomExampleComponent } from './view/custom-example.component';
+import { CustomSubmitHandlerController } from './custom-submit-handler.controller';
 
 @NgModule(Framing((framing) => framing
-  .import(CustomExampleComponentViewModule)
   .frame(new ExampleFeature()
-    .view({
-      customExampleComponent: CustomExampleComponent,
-    })
-  )
+    .controller(CustomSubmitHandlerController),
+  ),
 ))
-export class CustomExampleComponentModule {}
+export class CustomSubmitHandlerModule {}

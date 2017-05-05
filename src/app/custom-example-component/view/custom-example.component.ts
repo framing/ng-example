@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ExampleController } from 'features/custom-example/custom-example.controller';
+import { ExampleController } from 'features/example/example.controller';
 
 @Component({
   selector: 'custom-example-component',

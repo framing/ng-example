@@ -1,3 +1,9 @@
 <h1>Example Component</h1>
 
 <ng-template [ngComponentOutlet]="exampleController.view.exampleSubComponent"></ng-template>
+
+<div>
+  <button (click)="exampleController.submit()">Press Me</button>
+</div>
+
+<h3>Count {{ exampleController.model.count }}</h3>

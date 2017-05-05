@@ -11,7 +11,7 @@ import { CustomExampleComponent } from './view/custom-example.component';
   .frame(new ExampleFeature()
     .view({
       exampleComponent: CustomExampleComponent,
-    })
-  )
+    }),
+  ),
 ))
 export class CustomExampleComponentModule {}

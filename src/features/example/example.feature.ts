@@ -5,11 +5,11 @@ import { ExampleController } from './example.controller';
 import { ExampleModel } from './example.model';
 import { ExampleView } from './example.view';
 
+import { ExampleSubComponent } from './view/example-sub.component';
 import { ExampleViewModule } from './view/example-view.module';
 import { ExampleComponent } from './view/example.component';
-import { ExampleSubComponent } from './view/example-sub.component';
 
-export class ExampleFeature extends Framer<ExampleModel, ExampleView, ExampleController> {
+export class ExampleFeature extends Framer<ExampleModel, ExampleView> {
 
   public get framerName(): string { return 'ExampleFeature'; }
 
@@ -27,13 +27,13 @@ export class ExampleFeature extends Framer<ExampleModel, ExampleView, ExampleCon
     };
   }
 
-  public get defaultController(): Type<ExampleControler> {
+  public get defaultController(): Type<ExampleController> {
     return ExampleController;
   }
 
   public frame(framing: FramingNgModule): void {
     framing
       .import(ExampleViewModule)
-      .component(ExampleComponent);
+      .component(this.theView.exampleComponent);
   }
 }

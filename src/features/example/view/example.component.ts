@@ -4,7 +4,7 @@ import { ExampleController } from '../example.controller';
 
 @Component({
   selector: 'example-component',
-  templateUrl: './example-component.component.html',
+  templateUrl: './example.component.html',
 })
 export class ExampleComponent {
   constructor(

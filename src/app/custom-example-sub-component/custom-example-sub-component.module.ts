@@ -11,7 +11,7 @@ import { CustomExampleSubComponent } from './view/custom-example-sub.component';
   .frame(new ExampleFeature()
     .view({
       exampleSubComponent: CustomExampleSubComponent,
-    })
-  )
+    }),
+  ),
 ))
 export class CustomExampleSubComponentModule {}
