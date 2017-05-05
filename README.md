@@ -8,3 +8,6 @@ http://framing.io
 npm i
 npm start
 ```
+### Try the app
+
+https://framing-ng-example.firebaseapp.com
